@@ -1,0 +1,3 @@
+[submodule "react-app-project-backend"]
+	path = react-app-project-backend
+	url = https://github.com/Dcrame31/react-app-project-backend.git
