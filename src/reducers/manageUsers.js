@@ -19,10 +19,16 @@ export default function manageUsers(
         campgrounds: action.payload,
         loading: false,
       };
-    case "USERS_ADDING":
+    case "USER_ADDING":
       return {
         ...state,
         loading: true,
+      };
+    case "USER_ADDED":
+      return {
+        ...state,
+        users: [...state.users, action.payload],
+        loading: false,
       };
     default:
       return state;
