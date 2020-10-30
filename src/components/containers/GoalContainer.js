@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-class PlantContainer extends Component {
+class GoalContainer extends Component {
   render() {
     return <div></div>;
   }
 }
 
-export default PlantContainer;
+export default GoalContainer;
