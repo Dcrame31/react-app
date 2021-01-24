@@ -11,6 +11,7 @@ const PhotosContainer = () => {
                 <PhotoList />
                 <PhotoList />
                 <PhotoList />
+                <PhotoList />
             </div>
         </div>
         

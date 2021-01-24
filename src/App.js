@@ -1,5 +1,6 @@
 import React from "react";
 import PhotosContainer from "./components/PhotosContainer";
+import PlantContainer from './components/PlantContainer';
 
 function App() {
   return (
@@ -8,13 +9,13 @@ function App() {
 
       <div className="ui grid">
         <div className="ui row">
-          <div className="eleven wide column">
+          <div className="ten wide column">
             <PhotosContainer />
           </div>
+          <div className="six wide column">
+            <PlantContainer/>
+          </div>
         </div>
-      </div>
-      <div className="five wide column">
-        <div>Hello</div>
       </div>
     </div>
   );
