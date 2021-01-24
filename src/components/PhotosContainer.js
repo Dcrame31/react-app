@@ -1,20 +1,20 @@
 import React from 'react';
-import PlantList from './PlantList';
+import PhotoList from './PhotoList';
 
-const PlantCollection = () => {
+const PhotosContainer = () => {
     //have state and set state to plant results from API
 
     return (
         <div className="ui segment">
             <div className="ui list">
                 
-                <PlantList />
-                <PlantList />
-                <PlantList />
+                <PhotoList />
+                <PhotoList />
+                <PhotoList />
             </div>
         </div>
         
     );
 };
 
-export default PlantCollection;
+export default PhotosContainer;
