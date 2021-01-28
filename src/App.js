@@ -1,6 +1,6 @@
 import React from "react";
-import PhotosContainer from "./components/PhotosContainer";
-import PlantContainer from './components/PlantContainer';
+import PhotosContainer from "./components/Photos/PhotosContainer";
+import PlantContainer from './components/Plants/PlantContainer';
 
 function App() {
   return (
