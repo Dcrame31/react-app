@@ -11,6 +11,9 @@ function App() {
         <div className="ui row">
           <div className="ten wide column">
             <PhotosContainer />
+            <button className="ui icon button">
+              <i class="plus icon"></i>
+            </button>
           </div>
           <div className="six wide column">
             <PlantContainer/>
