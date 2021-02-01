@@ -6,6 +6,9 @@ import Modal from './components/Popup/Modal';
 function App() {
   const [ showModal, setShowModal ] = useState('');
 
+  const onClick = () => {
+    setShowModal('active')
+  };
  
   return (
     <div className="ui container" >
@@ -19,8 +22,8 @@ function App() {
             <PhotosContainer />
             <button 
               className="ui icon button"
-              onClick={() => setShowModal(!showModal)
-              }>
+              onClick={onClick}
+            >
               <i className="plus icon"></i>
             </button>
           </div>
