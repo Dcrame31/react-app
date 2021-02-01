@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PhotosContainer from "./components/Photos/PhotosContainer";
 import PlantContainer from './components/Plants/PlantContainer';
-import Modal from './components/Popup/Modal';
+import ModalContainer from './components/Popup/ModalContainer';
 
 function App() {
   const [ showModal, setShowModal ] = useState('');
@@ -12,7 +12,7 @@ function App() {
  
   return (
     <div className="ui container" >
-      <Modal showModal={showModal} setShowModal={setShowModal} />
+      <ModalContainer showModal={showModal} />
       <h1 style={{ textAlign: "center"}}>Welcome to plant app!</h1>
 
       <div className="ui grid">
