@@ -1,31 +1,25 @@
 import React, { useState } from "react";
 import PhotosContainer from "./components/Photos/PhotosContainer";
 import PlantContainer from './components/Plants/PlantContainer';
-import PopupWindow from './components/Photos/PopupWindow';
+import Modal from './components/Popup/Modal';
 
 function App() {
-  const [isPopUpVisible, setIsPopUpVisible] = useState(false);
+  const [ showModal, setShowModal ] = useState('');
 
-  const onHandleClick = () => {
-    setIsPopUpVisible(!isPopUpVisible);
-  }
-
-  const toggleWindow = isPopUpVisible ? <PopupWindow /> : '';
-  
-
+ 
   return (
     <div className="ui container" >
+      <Modal showModal={showModal} setShowModal={setShowModal} />
       <h1 style={{ textAlign: "center"}}>Welcome to plant app!</h1>
 
       <div className="ui grid">
         <div className="ui row">
           <div className="ten wide column">
-          {toggleWindow}
 
             <PhotosContainer />
             <button 
               className="ui icon button"
-              onClick={() => setIsPopUpVisible(!isPopUpVisible)
+              onClick={() => setShowModal(!showModal)
               }>
               <i className="plus icon"></i>
             </button>
