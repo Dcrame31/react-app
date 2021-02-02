@@ -2,7 +2,7 @@ import React from 'react'
 import './Modal.css';
 import PhotoForm from './PhotoForm';
 
-const Modal = ( { onSubmit, showModal, children }) => {
+const Modal = ( { onSubmit, onChange, showModal, children }) => {
     return (
        <div style={{height: "auto", top: "auto",
             left: "auto",
@@ -12,7 +12,7 @@ const Modal = ( { onSubmit, showModal, children }) => {
                 <div className="header">Upload Photo</div>
                 <i className="close icon"></i>
                 <div className="content">
-                    <PhotoForm onSubmit={onSubmit} />
+                    <PhotoForm onSubmit={onSubmit} onChange={onChange} />
                 </div>
             </div>
         </div>
